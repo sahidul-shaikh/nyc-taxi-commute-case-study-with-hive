@@ -8,6 +8,8 @@ The records include fields capturing pick-up and drop-off dates/times, pick-up a
 
 The data dictonary is uploaded.
 
+For a dictionary describing green taxi data, or a map of the TLC Taxi Zones, visit http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml. 
+
 This dataset was created by aggregating the aforementioned records. It provides precise location coordinates for where the trip started and ended, timestamps for when the trip started and ended, plus a few other variables including fare amount, payment method, and distance travelled.
 
 The purpose of this dataset is to get a better understanding of the taxi system so that the city of New York can improve the efficiency of in-city commutes. Several exploratory questions can be asked about the travelling experience for passengers.
