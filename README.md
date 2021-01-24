@@ -31,7 +31,7 @@ Here are the questions we need to answer.
 3. You might have encountered unusual or erroneous rows in the dataset. Can you conclude which vendor is doing a bad job in providing the records using different columns of the dataset? Summarise your conclusions based on every column where these errors are present. For example,  There are unusual passenger count, i.e. 0 which is unusual.
 
 **Before answering the below questions, you need to create a clean, ORC partitioned table for analysis. Remove all the erroneous rows.**
-**IMPORTANT: Before partitioning any table, make sure you run the below commands.
+**IMPORTANT: Before partitioning any table, make sure you run the below commands.**
 
 SET hive.exec.max.dynamic.partitions=100000;
 SET hive.exec.max.dynamic.partitions.pernode=100000;
@@ -48,9 +48,8 @@ SET hive.exec.max.dynamic.partitions.pernode=100000;
 
 1. What is the correlation between the number of passengers on any given trip, and the tip paid per trip? Do multiple travellers tip more compared to solo travellers? Hint: Use CORR(Col_1, Col_2)
 2. Segregate the data into five segments of ‘tip paid’: 
-[0-5), [5-10), [10-15) , [15-20) and >=20. 
-
-Calculate the percentage share of each bucket (i.e. the fraction of trips falling in each bucket).
+  [0-5), [5-10), [10-15) , [15-20) and >=20. 
+  Calculate the percentage share of each bucket (i.e. the fraction of trips falling in each bucket).
 
 3. Which month has a greater average ‘speed’ - November or December? Note that the variable ‘speed’ will have to be derived from other metrics. Hint: You have columns for distance and time.
 Analyse the average speed of the most happening days of the year, i.e. 31st December (New year’s eve) and 25th December (Christmas) and compare it with the overall average. 
